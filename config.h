@@ -89,6 +89,7 @@ static const char *mutevol[] = { "/home/zjun/scripts/vol-toggle.sh",  NULL };
 static const char *tim[] = { "/home/zjun/scripts/deepin-tim.sh",  NULL };
 static const char *burp[] = { "/home/zjun/scripts/burp.sh",  NULL };
 static const char *antsword[] = { "/home/zjun/scripts/antsword.sh",  NULL };
+static const char *behinder[] = { "/home/zjun/scripts/behinder.sh",  NULL };
 
 static const char *wpcmd[]  = { "/home/zjun/scripts/wp-change.sh", NULL };
 static const char scratchpadname[] = "scratchpad";
@@ -114,6 +115,7 @@ static Key keys[] = {
 	{ MODKEY,              XK_q,                    spawn,          {.v = tim } },
 	{ MODKEY,              XK_p,                    spawn,          {.v = burp } },
 	{ MODKEY,              XK_a,                    spawn,          {.v = antsword } },
+	{ MODKEY,              XK_x,                    spawn,          {.v = behinder } },
 	{ MODKEY|ShiftMask,    XK_j,                    rotatestack,    {.i = +1 } },
 	{ MODKEY|ShiftMask,    XK_k,                    rotatestack,    {.i = -1 } },
 	{ MODKEY,              XK_j,                    focusstack,     {.i = +1 } },
