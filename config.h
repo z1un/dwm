@@ -83,22 +83,22 @@ static const char *i3lockcmd[]  = { "i3lock-fancy", NULL };
 static const char *browsercmd[]  = { "google-chrome-stable", NULL };
 static const char *screenshot[]  = { "deepin-screenshot", NULL };
 
-static const char *upvol[]   = { "/home/zjun/scripts/vol-up.sh",  NULL };
-static const char *downvol[] = { "/home/zjun/scripts/vol-down.sh",  NULL };
-static const char *mutevol[] = { "/home/zjun/scripts/vol-toggle.sh",  NULL };
-static const char *upbl[]   = { "/home/zjun/scripts/bl-up.sh",  NULL };
-static const char *downbl[] = { "/home/zjun/scripts/bl-down.sh",  NULL };
+static const char *upvol[]   = { "/home/zjun/github/scripts/vol-up.sh",  NULL };
+static const char *downvol[] = { "/home/zjun/github/scripts/vol-down.sh",  NULL };
+static const char *mutevol[] = { "/home/zjun/github/scripts/vol-toggle.sh",  NULL };
+static const char *upbl[]   = { "/home/zjun/github/scripts/bl-up.sh",  NULL };
+static const char *downbl[] = { "/home/zjun/github/scripts/bl-down.sh",  NULL };
 
-static const char *tim[] = { "/home/zjun/scripts/deepin-tim.sh",  NULL };
-static const char *burp[] = { "/home/zjun/scripts/burp.sh",  NULL };
-static const char *antsword[] = { "/home/zjun/scripts/antsword.sh",  NULL };
-static const char *behinder[] = { "/home/zjun/scripts/behinder.sh",  NULL };
+static const char *tim[] = { "/home/zjun/github/scripts/deepin-tim.sh",  NULL };
+static const char *burp[] = { "/home/zjun/github/scripts/burp.sh",  NULL };
+static const char *antsword[] = { "/home/zjun/github/scripts/antsword.sh",  NULL };
+static const char *behinder[] = { "/home/zjun/github/scripts/behinder.sh",  NULL };
 
-static const char *wpcmd[]  = { "/home/zjun/scripts/wp-change.sh", NULL };
+static const char *wpcmd[]  = { "/home/zjun/github/scripts/wp-change.sh", NULL };
 static const char scratchpadname[] = "scratchpad";
 static const char *scratchpadcmd[] = { "st", "-t", scratchpadname, "-g", "80x24", NULL };
 
-static const char *suspendcmd[]  = { "/home/zjun/scripts/suspend.sh", NULL };
+static const char *suspendcmd[]  = { "/home/zjun/github/scripts/suspend.sh", NULL };
 
 static Key keys[] = {
 	/* modifier            key                      function        argument */
@@ -114,8 +114,8 @@ static Key keys[] = {
 	{ MODKEY,              XK_bracketleft,          spawn,          {.v = downvol } },
 	{ MODKEY,              XK_backslash,            spawn,          {.v = mutevol } },
 	{ MODKEY,              XK_bracketright,         spawn,          {.v = upvol   } },
-	{ 0,                   XF86XK_MonBrightnessDown,   spawn,          {.v = downbl } },
-	{ 0,                   XF86XK_MonBrightnessUp,     spawn,          {.v = upbl   } },
+	{ 0,                   XF86XK_MonBrightnessDown,spawn,          {.v = downbl } },
+	{ 0,                   XF86XK_MonBrightnessUp,  spawn,          {.v = upbl   } },
 	{ MODKEY,              XK_minus,                spawn,          {.v = downbl } },
 	{ MODKEY,              XK_plus,                 spawn,          {.v = upbl   } },
 	{ MODKEY,              XK_b,                    spawn,          {.v = wpcmd } },
