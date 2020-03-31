@@ -81,8 +81,9 @@ static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont,
 static const char *termcmd[]  = { "alacritty", NULL };
 static const char *i3lockcmd[]  = { "i3lock-fancy", NULL };
 static const char *browsercmd[]  = { "google-chrome-stable", NULL };
-static const char *screenshot[]  = { "deepin-screenshot", NULL };
+/*static const char *screenshot[]  = { "deepin-screenshot", NULL };*/
 
+static const char *screenshot[] = { "/home/zjun/github/scripts/flameshot.sh", NULL };
 static const char *upvol[]   = { "/home/zjun/github/scripts/vol-up.sh",  NULL };
 static const char *downvol[] = { "/home/zjun/github/scripts/vol-down.sh",  NULL };
 static const char *mutevol[] = { "/home/zjun/github/scripts/vol-toggle.sh",  NULL };
