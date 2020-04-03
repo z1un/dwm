@@ -89,6 +89,7 @@ static const char *downvol[] = { "/home/zjun/github/scripts/vol-down.sh",  NULL 
 static const char *mutevol[] = { "/home/zjun/github/scripts/vol-toggle.sh",  NULL };
 static const char *upbl[]   = { "/home/zjun/github/scripts/bl-up.sh",  NULL };
 static const char *downbl[] = { "/home/zjun/github/scripts/bl-down.sh",  NULL };
+static const char *rofi[] = { "/home/zjun/github/scripts/rofi.sh", NULL };
 
 static const char *tim[] = { "/home/zjun/github/scripts/deepin-tim.sh",  NULL };
 static const char *burp[] = { "/home/zjun/github/scripts/burp.sh",  NULL };
@@ -99,11 +100,13 @@ static const char *wpcmd[]  = { "/home/zjun/github/scripts/wp-change.sh", NULL }
 static const char scratchpadname[] = "scratchpad";
 static const char *scratchpadcmd[] = { "st", "-t", scratchpadname, "-g", "80x24", NULL };
 
+
 static const char *suspendcmd[]  = { "/home/zjun/github/scripts/suspend.sh", NULL };
 
 static Key keys[] = {
 	/* modifier            key                      function        argument */
 	{ MODKEY,              XK_d,                    spawn,          {.v = dmenucmd } },
+	{ MODKEY,              XK_w,                    spawn,          {.v = rofi } },
 	{ MODKEY,              XK_Return,               spawn,          {.v = termcmd } },
 	{ MODKEY|ShiftMask,    XK_s,                    spawn,          {.v = i3lockcmd } },
 	{ MODKEY|ShiftMask,    XK_a,                    spawn,          {.v = screenshot } },
